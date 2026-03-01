@@ -1,0 +1,310 @@
+/* Glyph Lock - Dark theme styles */
+
+.gl-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  padding: 24px;
+  background-color: #0a0a0a;
+  color: #e0e0e0;
+  font-family: 'Inter', 'Segoe UI', system-ui, -apple-system, sans-serif;
+  min-height: 100%;
+  box-sizing: border-box;
+}
+
+.gl-title {
+  font-size: 28px;
+  font-weight: 700;
+  color: #64ffda;
+  margin: 0;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+/* HUD */
+.gl-hud {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  max-width: 400px;
+}
+
+.gl-hud-top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+}
+
+.gl-hud-stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+}
+
+.gl-hud-label {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #888888;
+}
+
+.gl-hud-value {
+  font-size: 20px;
+  font-weight: 700;
+  color: #e0e0e0;
+}
+
+.gl-hud-lives {
+  display: flex;
+  gap: 4px;
+}
+
+.gl-life-active {
+  color: #ff6b6b;
+}
+
+.gl-life-empty {
+  color: #444444;
+}
+
+.gl-rules-btn {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 1.5px solid #64ffda;
+  background: transparent;
+  color: #64ffda;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.15s ease;
+}
+
+.gl-rules-btn:hover {
+  background-color: rgba(100, 255, 218, 0.1);
+}
+
+/* Timer bar */
+.gl-timer-bar {
+  width: 100%;
+  height: 6px;
+  background-color: #1a1a1a;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.gl-timer-fill {
+  height: 100%;
+  border-radius: 3px;
+  transition: width 0.1s linear, background-color 0.3s ease;
+}
+
+/* Submit button */
+.gl-submit-btn {
+  padding: 10px 32px;
+  background-color: #64ffda;
+  color: #0a0a0a;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: opacity 0.15s ease;
+}
+
+.gl-submit-btn:hover {
+  opacity: 0.85;
+}
+
+/* Grid wrapper */
+.gl-grid-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.gl-grid-canvas {
+  border-radius: 8px;
+}
+
+/* Color picker */
+.gl-color-picker {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  padding: 8px 0;
+}
+
+/* Rules overlay */
+.gl-rules-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.85);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+}
+
+.gl-rules-panel {
+  background-color: #141414;
+  border: 1px solid #333333;
+  border-radius: 12px;
+  padding: 32px;
+  max-width: 420px;
+  width: 90%;
+}
+
+.gl-rules-title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #64ffda;
+  margin: 0 0 4px 0;
+}
+
+.gl-rules-tagline {
+  font-size: 14px;
+  color: #888888;
+  font-style: italic;
+  margin: 0 0 20px 0;
+}
+
+.gl-rules-section {
+  margin-bottom: 16px;
+}
+
+.gl-rules-section h3 {
+  font-size: 14px;
+  font-weight: 600;
+  color: #64ffda;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 0 0 8px 0;
+}
+
+.gl-rules-section p {
+  font-size: 14px;
+  color: #cccccc;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.gl-rules-list {
+  margin: 0;
+  padding-left: 20px;
+  font-size: 14px;
+  color: #cccccc;
+  line-height: 1.8;
+}
+
+.gl-rules-close {
+  margin-top: 20px;
+  padding: 10px 24px;
+  background-color: #64ffda;
+  color: #0a0a0a;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  width: 100%;
+}
+
+.gl-rules-close:hover {
+  opacity: 0.85;
+}
+
+/* Game over overlay */
+.gl-gameover-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 200;
+}
+
+.gl-gameover-panel {
+  background-color: #141414;
+  border: 1px solid #333333;
+  border-radius: 12px;
+  padding: 40px;
+  text-align: center;
+  max-width: 360px;
+  width: 90%;
+}
+
+.gl-gameover-title {
+  font-size: 28px;
+  font-weight: 700;
+  color: #ff6b6b;
+  margin: 0 0 8px 0;
+}
+
+.gl-gameover-best {
+  font-size: 16px;
+  color: #ffd93d;
+  font-weight: 600;
+  margin: 0 0 20px 0;
+}
+
+.gl-gameover-stats {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.gl-gameover-stat {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 0;
+  border-bottom: 1px solid #222222;
+}
+
+.gl-gameover-label {
+  font-size: 14px;
+  color: #888888;
+}
+
+.gl-gameover-value {
+  font-size: 20px;
+  font-weight: 700;
+  color: #64ffda;
+}
+
+.gl-retry-btn {
+  padding: 12px 32px;
+  background-color: #64ffda;
+  color: #0a0a0a;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  width: 100%;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.gl-retry-btn:hover {
+  opacity: 0.85;
+}
